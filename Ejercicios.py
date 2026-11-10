@@ -521,7 +521,10 @@ bob = UsuarioBanco("Bob", 50, True)
 
 bob.agregar_dinero(20)
 
-bob.transferir_dinero(alicia, 50)
+try:
+    bob.transferir_dinero(alicia, 80)
+except ValueError as error:
+    print(error)
 
 alicia.retirar_dinero(50)
 
@@ -638,7 +641,7 @@ print(calcular_area("circulo", (4,)))
 precio = float(input('Introduzca el precio:'))
 cupon = input('¿Tiene cupón? (Sí/No):')
 
-if cupon == "sí":
+if cupon == "Sí":
 
     descuento = float(input("Introduce el valor del descuento: "))
 

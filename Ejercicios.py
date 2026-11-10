@@ -639,7 +639,7 @@ print(calcular_area("circulo", (4,)))
     # e. Mostrar el precio final de la compra, considerando o no el descuento.\
     # f. Usar estructuras de control de flujo (if, elif, else) para llevar a cabo las acciones.\
 precio = float(input('Introduzca el precio:'))
-cupon = input('¿Tiene cupón? (Sí/No):')
+cupon = input('¿Tiene cupón? (Sí/No):').lower()
 
 if cupon == "Sí":
 
